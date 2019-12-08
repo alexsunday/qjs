@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"quickjs"
+	"github.com/alexsunday/quickjs"
 )
 
 func test() {
@@ -12,7 +12,7 @@ func test() {
 	ctx := rt.NewContext()
 	fmt.Println(ctx)
 
-	ctx.EvalCode("console.log('1+1=', 1+1)")
+	ctx.EvalCode("1+1===1")
 
 	fmt.Println(rt)
 }
